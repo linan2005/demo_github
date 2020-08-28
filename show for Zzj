@@ -1,0 +1,19 @@
+name_0 = {
+    'first_name': '赵',
+    'last_name': '子健',
+    '性别':'男',
+    'age': 16,
+    'city': '杭州',
+    'favorite_language': 'C++',
+    }
+print("Zzj's favorite language is " +
+      name_0['favorite_language'].title() +
+      ".")
+print(name_0['first_name'] +
+      name_0['last_name'] +
+      "是" +
+      "大帅哥/老秃子" +
+      "!!!")
+print("Zzj芳龄" + str(name_0['age']) + '岁。')
+print("帅气的zzj生活在" + name_0['city'] + '.')
+print("Fine,thanks for watching Zzj's show!")
