@@ -1,0 +1,11 @@
+#The code that scolds beautiful He
+xx = input("请输入年龄：")
+age = int(xx)
+if age < 10:
+    print("It's so white, the little girl He.")
+elif age <18:
+    print("When she was a student, she turned black again")
+else:
+    print("After that, Hope she turns white, and change beatuiful.")
+
+print("Fine,Thanks for watching!")
