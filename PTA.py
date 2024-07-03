@@ -16,7 +16,7 @@ def f(x):
 
 # 6-2 整数数位和
 def digitSum(v):
-    lst = list(map(int,str(v)))
+    lst = [int(i) for i in str(v) ]
     return sum(lst)
 
 # 6-3 编写函数计算f(i) = 1/2 + 2/3 + 3/4 + ... + i/(i+1)
@@ -25,7 +25,19 @@ def f(i):
     for i in range(1,i+1):
         sum += i/(i+1)
     return sum
+# 6-3 列表表达式展开写 
+def digitSum(v):
+    lst = []
+    for i in str(v):
+        lst.append(int(i))
+    return sum(lst)
 
+# 6-3 用循环写
+def digitSum(v):
+    s = 0
+    for i in str(v):
+        s += int(i)
+    return s
 
 # 6-4 计算工资
 # 大于40小时但小于或等于60小时按平时小时薪酬的1.5倍给薪；大于60小时则按平时小时薪酬的2倍给薪。
@@ -58,6 +70,7 @@ def acronym(phrase):
 def factorial(num):
     jiechen = 1
     for i in range(num,0,-1):
+# for i in range(1,num+1):
         jiechen *= i
     return jiechen
 
@@ -234,6 +247,7 @@ print(total)
 jiechen = 1
 n = int(input())
 for i in range(n,0,-1):
+# range(1,n+1)
     jiechen *= i
 print(jiechen)
 
@@ -480,7 +494,7 @@ print('  A')
 # 其中interest为存款到期时的利息（税前），money是存款金额，year是存期，rate是年利率
 # 在一行中按“interest = 利息”的格式输出，其中利息保留两位小数。
 lst = list(map(float,input().split()))
-money = lst[0]
+money = lst[0] 
 year = lst[1]
 rate = lst[2]
 interest = money*(1+rate)**year-money
