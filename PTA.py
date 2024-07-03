@@ -346,7 +346,7 @@ lst = [i for i in height if i > ave]
 print(*lst,end=' ')
 
 
-# 7-23 水仙花数  （没通过PTA测试，思路是这样的）
+# 7-23 水仙花数  
 # 水仙花数是指一个N位正整数（N≥3），它的每个位上的数字的N次幂之和等于它本身。
 # 例如：153=1×1×1+5×5×5+3×3×3。 100-999 1000-9999
 N = int(input())
@@ -354,8 +354,8 @@ for number in range(10**(N-1),10**N):
     sum = 0
     for i in str(number):
         sum += int(i)**3
-        if sum == int(number):
-            print(number)
+    if sum == int(number):
+        print(number)
 
 
 
