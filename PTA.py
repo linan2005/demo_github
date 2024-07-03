@@ -353,7 +353,7 @@ N = int(input())
 for number in range(10**(N-1),10**N):
     sum = 0
     for i in str(number):
-        sum += int(i)**3
+        sum += int(i)**N
     if sum == int(number):
         print(number)
 
